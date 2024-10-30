@@ -10,4 +10,8 @@ Route::get('/', function () {
 Route::get('/upload-form', function () {
     return view('upload');
 });
+
+Route::get('/landing', function () {
+    return view('landing');
+});
 Route::post('/upload', [FileController::class, 'store']);
