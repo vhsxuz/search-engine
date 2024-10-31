@@ -20,7 +20,7 @@
 
         .logo {
             position: absolute;
-            top: 0px;
+            top: 10px;
             left: 10%;
         }
 
