@@ -25,7 +25,14 @@
         }
 
         .logo img {
-            width: 35%;
+            width: 25%;
+        }
+
+        .divider {
+            width: 450%;
+            height: 2px;
+            background-color: #b8b58a;
+            margin-top: 10px;
         }
 
         .title {
@@ -71,11 +78,29 @@
             font-weight: 700;
             color: black; /* Icon color */
         }
+
+        .upload-button {
+            background-color: #8b8c68; /* Button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .upload-button:hover {
+            background-color: #7a7b61;
+        }
     </style>
 </head>
 <body>
     <div class="logo">
         <img src="{{ asset('images/logo.png') }}" alt="ICT Logo">
+        <div class="divider"></div>
     </div>
 
     <div class="title">Infracom Technology</div>
@@ -86,5 +111,8 @@
             <i class="bi bi-search"></i>
         </button>
     </div>
+
+    <!-- Upload Data Button -->
+    <a href="{{ url('/upload-form') }}" class="upload-button">Upload Document</a>
 </body>
 </html>
